@@ -1,8 +1,10 @@
+import 'package:bloquera/pages/gastos.dart';
 import 'package:bloquera/pages/login.dart';
+import 'package:bloquera/pages/ventas.dart';
 import 'package:bloquera/routes/paginas.dart';
 import 'package:bloquera/routes/routes.dart';
 import 'package:bloquera/pages/home.dart';
-import 'package:bloquera/pages/materiales.dart';
+import 'package:bloquera/pages/inventario.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(const Home());
@@ -22,13 +24,33 @@ class Home extends StatelessWidget {
           children: [
             
             ListTile(
-            leading: Icon(Icons.block),
-            title: Text('hola'),
+            leading: Icon(Icons.storage),
+            title: Text('Inventario'),
             onTap: () {
                       Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => Materiales()));
+                          MaterialPageRoute(builder: (context) => Inventario()));
                     }, //el ontap es para que al pulsar se valla
             ),
+
+            ListTile(
+            leading: Icon(Icons.sell),
+            title: Text('Ventas'),
+            onTap: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => Ventas()));
+                    }, //el ontap es para que al pulsar se valla
+            ),
+
+            ListTile(
+            leading: Icon(Icons.wallet),
+            title: Text('Gastos'),
+            onTap: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => Gastos()));
+                    }, //el ontap es para que al pulsar se valla
+            ),
+
+            
           ],
         ),
       ),

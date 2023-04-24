@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(const Materiales());
+void main() => runApp(const Inventario());
 
-class Materiales extends StatelessWidget {
-  const Materiales({super.key});
+class Inventario extends StatelessWidget {
+  const Inventario({super.key});
 
   @override
   Widget build(BuildContext context) {
