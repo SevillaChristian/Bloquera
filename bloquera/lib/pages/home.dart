@@ -16,9 +16,11 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Mi Appp'),
+        backgroundColor: Colors.black,
+        title: const Text('Bienvenido !!'),
+        
       ),
-      drawer: Drawer(
+      drawer: Drawer(//AQUI INICIA EL MENU DE HAMBURGUESA
         child: ListView(
           
           children: [
@@ -53,9 +55,10 @@ class Home extends StatelessWidget {
             
           ],
         ),
-      ),
+      ),//AQUI TERMINA EL MENU DE HAMBURGUESA
+
       body: const Center(
-        child: Text('Bienvenido a mi App'),
+        child: Text('Bienvenido CUEVOSO'),
       ),
     );
   }

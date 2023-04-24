@@ -36,7 +36,7 @@ class _ContenidoState extends State<Contenido> {
     crossAxisAlignment: CrossAxisAlignment.start,
     children: [
       Text(
-        'Login',
+        'Bienvenido',
         style: TextStyle(
           color: Colors.white,
           fontWeight: FontWeight.bold,
@@ -47,7 +47,7 @@ class _ContenidoState extends State<Contenido> {
         height: 5,
       ),
       Text(
-        'Bienvenido',
+        'Bloquera Cuevas',
         style: TextStyle(
           color: Colors.white,
           fontSize: 20,

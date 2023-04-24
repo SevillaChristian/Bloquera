@@ -5,18 +5,21 @@ void main() => runApp(const Gastos());
 class Gastos extends StatelessWidget {
   const Gastos({super.key});
 
-  @override
+ @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Material App',
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Material App Bar'),
-        ),
-        body: const Center(
-          child: Text('Hello World'),
+    return Scaffold(
+      appBar: AppBar(
+         backgroundColor: Colors.black,
+        leading: IconButton(
+          onPressed: () {
+            if (Navigator.canPop(context)) {
+              Navigator.pop(context);
+            }
+          },
+          icon: Icon(
+              Icons.arrow_back_ios_new_rounded), //esta es la flecha estilo ios
         ),
       ),
     );
-  }
+  }//fin del build
 }
